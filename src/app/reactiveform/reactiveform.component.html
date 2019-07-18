@@ -1,0 +1,59 @@
+<!-- <p>
+  reactiveform works!
+</p> -->
+<!-- This section has display value in console part -->
+<!-- <label>
+    Name:
+    <input type="text" [formControl]="name">
+  </label>
+  <button (click)="react()">Submit</button>
+  <p>
+      Value: {{ name.value }}
+    </p> -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+    <form [formGroup]="profileform">
+  
+        <label>
+          First Name:
+          <input type="text" formControlName="firstname" required>
+        </label><br>
+      
+        <label>
+          Last Name:
+          <input type="text" formControlName="lastname">
+        </label><br>
+        <!-- <button (click)="react()" [disabled]="!profileform.valid">Submit</button> -->
+
+<!-- This part has nested form group we use it inside parent form tag and inside a div tag -->
+        <div formGroupName="address">
+            <h3>Address</h3>
+          
+            <label>
+              Street:
+              <input type="text" formControlName="street">
+            </label>
+          
+            <label>
+              City:
+              <input type="text" formControlName="city">
+            </label>
+            
+            <label>
+              State:
+              <input type="text" formControlName="state">
+            </label>
+          
+            <label>
+              Zip Code:
+              <input type="text" formControlName="zip">
+            </label>
+          </div>
+
+          <button (click)="react()" [disabled]="!profileform.valid">Submit</button>
+      
+      </form>
+    </div>
+  </div>
+</div>

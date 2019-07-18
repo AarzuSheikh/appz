@@ -1,0 +1,76 @@
+<!-- <p>
+  formbl works!
+</p> -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="image"> 
+            <h3 style="margin-top: 40px;text-align:center;">Register Here</h3>
+
+<div class="container">
+<form [formGroup]="profilename">
+    
+    <div class="form-group ">
+        <label><b>First Name</b></label>
+        <input type="text" placeholder="First name" formControlName="firstname" class="form-control box" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
+        <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+            <div *ngIf="f.firstname.errors.required">First Name is required</div>
+            <div *ngIf="f.firstname.errors.minlength">Firstname must be at least 6 characters</div>
+
+            
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><b>Last Name</b></label>
+        <input type="text" placeholder="Last name" formControlName="lastname" class="form-control box" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" />
+        <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+            <div *ngIf="f.lastname.errors.required">Last Name is required</div>
+            <div *ngIf="f.lastname.errors.minlength">Lastname must be at least 6 characters</div>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Email" formControlName="email" class="form-control box" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors">Email is required</div>
+            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors">Password is required</div>
+            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm password" formControlName="confirmpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmpassword.errors }" />
+        <div *ngIf="submitted && f.confirmpassword.errors" class="invalid-feedback">
+            <div *ngIf="f.confirmpassword.errors">Confirm Password is required</div>
+            <div *ngIf="f.confirmpassword.errors">Passwords must match</div>
+        </div>
+    </div>
+
+  <button class="btn  btn btn-outline-success" (click)="onSubmit1(password,confirmpassword)">Submit</button><br>
+  <button class="btn  btn-outline-primary" (click)="onSubmit()">Register</button>
+  <p>
+      Form Status: {{ profilename.status }}
+      <a [routerLink]="['/login']">Login</a> here
+    </p>
+    <!-- <a [routerLink]="['/login']">Login</a> -->
+</form>
+</div>
+</div>
+</div>
+</div>
+<span style="margin-left: 320px;"> We use cookies for security</span><button class="btn  btn-outline-primary" style="margin-left: 0px;" (click)='set()'>Set Cookie</button>
+</div>
+</div>

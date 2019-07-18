@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 64px;
+  }
+  
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: right;
+    /* margin-left: 60px; */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+  }
+  
+  .flip-card-back {
+    background-color:  #f1b309;
+    color: white;
+    transform: rotateX(180deg);
+    z-index: 1;
+  }
+  .imgg{
+    background-image: url('hap.jpg');
+    /* width:350px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img1{
+    background-image: url('lv1.jpg');
+    /* width:150px;height:250px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img2{
+    background-image: url('angry1.jpg');
+    /* width:300px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img3{
+    background-image: url('gym1.jpg');
+    /* width:300px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img1{
+    background-image: url('lv1.jpg');
+    /* width:150px;height:250px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img2{
+    background-image: url('angry1.jpg');
+    /* width:300px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img3{
+    background-image: url('gym1.jpg');
+    /* width:300px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img4{
+    background-image: url('sum.jpg');
+    /* width:300px;height:300px; */
+    background-size: cover;
+  }
+  .img5{
+    background-image: url('monsoon.jpg');
+    background-size: cover;
+    margin-left: 180px;
+    width:300px;height:300px;
+  }
+  .img6{
+    background-image: url('wint1.jpg');
+    /* width:300px;height:300px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .glow {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #20da9c, 0 0 40px #00e699, 0 0 50px #00e6ad, 0 0 60px #00e6ad, 0 0 70px #00e6ad;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4dfff0, 0 0 40px #4dfff0, 0 0 50px #4dfff0, 0 0 60px #4dfff0, 0 0 70px #4dfff0, 0 0 80px #4dfff0;
+    }
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }

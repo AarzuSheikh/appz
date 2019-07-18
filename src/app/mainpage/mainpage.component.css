@@ -1,0 +1,42 @@
+.img{
+    background-color: rgb(129, 125, 119);
+    background-size: cover;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 40px; 
+    margin-left: 60px; */
+}
+h4{
+    /* background-color: rgb(161, 197, 32); */
+      /* margin-top: 40px;  */
+    margin-left: 60px;
+}
+/* .para{
+    margin-top: 50px;
+    margin-right: 50px;
+} */
+.imgg{
+    /* background-image: url('pict2.jpg'); */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    height: 640px;
+    background-color: rgb(197, 234, 243);
+    width: 1600px;
+    
+    /* width: 1110px; */
+
+    /* background-color: blue; */
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+.centt{
+    margin-left: 620px;
+    margin-top: 150px;
+    background-image: url('pict1.jpg');
+    height: 1180px;
+    width: 640px;
+    /* opacity: 20px; */
+    background-repeat: no-repeat;
+
+}

@@ -1,0 +1,35 @@
+.flip-card {
+    /* background-color: pink; */
+    background-image: url('oreo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  .nutella{
+      background-image: url('nutella.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+  }
+  .kitkat{
+      background-image: url('kitkat.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .classic{
+    background-image: url('classic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .brownie{
+    background-image: url('brownie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  

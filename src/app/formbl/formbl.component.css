@@ -1,0 +1,44 @@
+.image{
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    width: auto;
+    height: 600px;
+    
+}
+
+input{
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: none;
+    /* border-bottom: 1px solid rgb(253, 253, 250); */
+    
+}
+
+ 
+/* .box{
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-bottom: 1px solid black;
+    
+    opacity: 0.1;
+  filter: alpha(opacity=60);
+} */
+
+/* ::placeholder{
+    color: rgb(52, 6, 90);
+}
+.form-area input[type=password]{
+    color: black;
+    
+    opacity: 0.1;
+} */
+b{
+    color: blue;
+}
+.imgg{
+    /* width:250px; */
+    background-image: url('img.jpg');
+    background-size: cover;
+}

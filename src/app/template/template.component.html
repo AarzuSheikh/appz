@@ -1,0 +1,53 @@
+<!-- <p>
+  template works!
+</p> -->
+<div  class="jumbotron">
+  <div  class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2>Angular form</h2>
+          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="firstname" ngModel #firstname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstname.invalid }" required > 
+            <div *ngIf="f.submitted && firstname.invalid" class="invalid-feedback">
+                <div *ngIf="firstname.errors.required">First Name is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+              <input type="text" class="form-control" name="lastname" ngModel #lastname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastname.invalid }" required > 
+              <div *ngIf="f.submitted && lastname.invalid" class="invalid-feedback">
+                  <div *ngIf="lastname.errors">Last Name is required</div>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+              <input type="password" class="form-control" name="password" ngModel #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6"> 
+              <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                <div *ngIf="password.errors">Password is required</div>
+                <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+          </div>
+
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" name="cpassword" ngModel #cpassword="ngModel" [ngClass]="{ 'is-invalid': f.submitted && cpassword.invalid }" required minlength="6"> 
+                <div *ngIf="f.submitted && cpassword.invalid" class="invalid-feedback">
+                  <div *ngIf="cpassword.errors">Password is required</div>
+                  <div *ngIf="cpassword.errors.minlength">Password must be at least 6 characters</div>
+                </div>
+              </div>
+           
+              <div class="form-group">
+                <button class="btn btn-primary" (click)="onSubmit(password,cpassword)">Register</button>
+              </div>
+
+          </form>
+        </div>   
+    </div>
+  </div>
+
+</div>

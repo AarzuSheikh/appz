@@ -1,0 +1,29 @@
+<!-- <p>
+  biryani works!
+</p> -->
+<div style="margin-top: 85px;">
+    <div class="">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div>
+              <h2 style="text-align: center; font-family:'Times New Roman', Times, serif;margin-top: 10px;background-color: cadetblue"><b>You can search by your favourite location</b></h2>
+              <!-- <input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
+              <label>Enter place or address: </label>
+              <input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox">
+              <!-- <br> --><p></p>
+              <table *ngFor="let x of customerData | gridfilter: {name: searchText, Add:searchText, type:searchText}; let i=index;">
+                  <tr>
+                    <td style="width: 5%;">{{i +1}}</td>
+                    <td style="width: 10%;">{{x.name}}</td>
+                    <td style="width: 5%;">{{x.Add}}</td>
+                    <td style="width: 15%;">{{x.type}}</td>
+                  </tr>
+                </table>
+    
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
