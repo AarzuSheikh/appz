@@ -23,7 +23,7 @@
     "core-js": "^2.5.4",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
-    "mongoose": "^5.5.14",
+    "mongoose": "^5.7.5",
     "ng-lazyload-image": "^5.1.2",
     "ngx-cookie-service": "^2.2.0",
     "ngx-filter-pipe": "^2.1.2",
